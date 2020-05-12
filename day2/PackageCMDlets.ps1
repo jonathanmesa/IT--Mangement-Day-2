@@ -31,8 +31,8 @@ $all = Get-Package
 ##Inspect the output:
 $all | group-object –property ProviderName
 $all | where-object -FilterScript {$_.Providername -eq "msu"}
-$all | where-object -FilterScript {$_.Providername -eq “msi"
-$all | where-object -FilterScript {$_.Providername -eq “Chocolatey"}
+$all | where-object -FilterScript {$_.Providername -eq "msi"}
+$all | where-object -FilterScript {$_.Providername -eq "Chocolatey"}
 
 #If you have a MSI program that can be uninstalled show uninstall from a msi program works
 Uninstall-Package -name "Google Talk Plugin"
