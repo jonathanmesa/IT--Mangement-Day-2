@@ -1,4 +1,4 @@
-﻿#Consider demoing the following:
+#Consider demoing the following:
 
 #Find zoomit in chocolatey
 Find-Package -Source chocolatey -Name zoomit # 	-> Won`t work because we renamed chocolatey into puurchocolate last demo
@@ -11,7 +11,7 @@ Save-Package –name zoomit –Source Puurchocolate   –path c:\temp
 #Install a package from your save location
 Install-Package –InputObject c:\temp\zoomit.4.50.0.20160210.nupkg	#-> note there is no message saying that the repository is untrusted as we set puurchocolate repo to a trusted repo
 
-Install a package direct from the repository
+#Install a package direct from the repository
 Install-Package -Source chocolatey -Name zoomit  #	-> Won`t work because we renamed chocolatey into puurchocolate last demo
 Install-Package -Source Puurchocolate -Name zoomit #	-> note there is no message saying that the repository is untrusted as we set puurchocolate repo to a trusted repo
 
